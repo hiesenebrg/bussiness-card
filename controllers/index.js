@@ -170,9 +170,9 @@ module.exports.qrgenerator = async (req, res) => {
           // Set the response headers for a JPEG image
           res.setHeader("Content-Type", "image/jpeg");
           res.setHeader("Content-Disposition", "attachment; filename=digital_card.jpg");
-
+          screenshotBuffer.pipe(res);
           // Send the JPEG image buffer as the response
-          return res.status(200).send(screenshotBuffer);
+          // return res.status(200).send(screenshotBuffer);
         } catch (error) {
           console.log("error in styling: ", error);
           return res.status(500).send({
