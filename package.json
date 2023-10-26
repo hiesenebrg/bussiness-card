@@ -19,9 +19,11 @@
     "path": "^0.12.7",
     "playwright": "^1.39.0",
     "puppeteer": "^21.4.1",
+    "puppeteer-core": "^21.4.1",
     "qr-code-styling": "^1.6.0-rc.1",
     "qrcode": "^1.5.3"
-  },"engines": {
+  },
+  "engines": {
     "node": "18.18.2"
   }
 }

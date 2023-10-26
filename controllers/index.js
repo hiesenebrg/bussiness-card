@@ -2,7 +2,7 @@ const QRCode = require("qrcode");
 const outputPath = "uploads";
 const fs = require("fs");
 const currentDirectory = process.cwd();
-const puppeteer = require("puppeteer");
+const puppeteer = require("puppeteer-core");
 
 // Function to read an image file and return it as a base64 string
 const getImageAsBase64 = (filePath) => {
